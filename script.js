@@ -15,7 +15,7 @@ const player1 = document.querySelector('.player--1');
 const init = function () {
   scores = [0, 0];
   currentScore = 0;
-  activePlayer = 0;
+  activePlayer = Math.trunc(Math.random() * 2);
   playing = true;
   scorePl1El.textContent = 0;
   scorePl2El.textContent = 0;
@@ -24,8 +24,12 @@ const init = function () {
   document.getElementById(`current--1`).textContent = 0;
   player0.classList.remove('player--winner');
   player1.classList.remove('player--winner');
-  player0.classList.add('player--active');
+  player0.classList.remove('player--active');
   player1.classList.remove('player--active');
+  console.log(activePlayer);
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.add('player--active');
 };
 init();
 
