@@ -1,4 +1,5 @@
 # 🎲 Push Your Luck
+https://sanyorat.github.io/Push_Your_luck/
 
 ## Overview
 Push Your Luck is a simple and exciting dice game that combines luck and strategy. Players take turns rolling a single die as many times as they want, accumulating points for each roll. However, if a player rolls a 1, they lose all points for that turn and their turn ends. The first player to reach 100 points wins the game!
